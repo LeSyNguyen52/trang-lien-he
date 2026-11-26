@@ -1,76 +1,31 @@
 @charset "utf-8";
 
-body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    margin: 0;
-    padding: 30px 10px;
-    background-image: 
-        radial-gradient(circle at 15% 20%, rgba(255, 221, 221, 0.85) 0%, transparent 45%),
-        radial-gradient(circle at 85% 80%, rgba(0, 102, 153, 0.15) 0%, transparent 45%),
-        linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+form {
+    background: #eee;
+    display: inline-block;
 }
 
-.mytextbox {
-    color: #99FF33;
-    background-color: #006699;
-    border: 1px solid #996633;
-    width: 300px;
-    padding: 5px 8px;
-    border-radius: 6px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.35);
+form span {
+    display: inline-block;
+    width: 80px;
+    background: #eee;
+    margin: 10px 3px 3px 8px;
+}
+
+form input, form select {
+    width: 150px;
+    height: 20px;
+    margin: 0px 5px;
     box-sizing: border-box;
-    transition: 0.25s;
 }
 
-.mytextbox::placeholder {
-    color: #ccff99;
-    opacity: 0.85;
+form select {
+    margin: 1px;
 }
 
-.mytextbox:focus {
-    outline: none;
-    box-shadow: 0 0 6px rgba(0, 102, 153, 0.7);
-}
-
-#form1 table {
-    border: 5px groove #993366;
-    background-color: #FFDDDD;
-    color: #003399;
-    margin: 0px auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(153, 51, 102, 0.25);
-}
-
-#form1 table caption {
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 0;
-    color: #993366;
-    text-shadow: 1px 1px 2px rgba(0, 51, 153, 0.25);
-}
-
-#form1 table td {
-    border: 1px solid #CC9999;
-    border-radius: 4px;
-}
-
-#btnDangKy,
-#btnXoa {
-    padding: 6px 18px;
-    margin: 2px 6px;
-    border: 1px solid #993366;
-    border-radius: 6px;
-    background-color: #006699;
-    color: #FFFFFF;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: 0.25s;
-}
-
-#btnDangKy:hover,
-#btnXoa:hover {
-    background-color: #993366;
-    transform: translateY(-1px);
+form input[type='submit'] {
+    display: block;
+    margin: 10px 0px 12px 98px;
+    width: 80px;
+    height: 30px;
 }
